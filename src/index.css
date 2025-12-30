@@ -8,18 +8,22 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
-body {
+body.default-bg {
   min-height: 100vh;
   background:
-  linear-gradient(rgb(5 45 72 / 72%), rgb(0 0 0)),
-  url(./assets/0_m0uzkz9Bd5KnoxuE.jpg);
+    linear-gradient(rgb(5 45 72 / 72%), rgb(0 0 0)),
+    url("./assets/0_m0uzkz9Bd5KnoxuE.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-      /* margin: -4px; */
 }
+
+body.black-bg {
+  background: black;
+}
+
 @media (max-width: 768px) {
   body {
     background-size:auto
